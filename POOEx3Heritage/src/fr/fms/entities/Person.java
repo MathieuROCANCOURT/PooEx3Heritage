@@ -68,8 +68,7 @@ public class Person {
 			display += " , Ville de naissance : " + this.bornCity.getName() + " , " + this.bornCity.getCountry();
 
 			if (this.bornCity.getNbInhabitants() != 0) {
-				display += " , population " + this.bornCity.getName() + " " + this.bornCity.getNbInhabitants()
-						+ " d'habitants";
+				display += " , " + this.bornCity.getNbInhabitants() + " d'habitants";
 			}
 		}
 
