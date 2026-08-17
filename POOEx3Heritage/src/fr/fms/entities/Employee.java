@@ -9,19 +9,6 @@ package fr.fms.entities;
 public class Employee extends Person{
 	private String nameCompany;
 	private double salary;
-	
-	/**
-	 * 
-	 * @param lastName
-	 * @param firstName
-	 * @param salary
-	 * @param nameCompany
-	 */
-	public Employee(String lastName, String firstName, double salary, String nameCompany) {
-		super(lastName, firstName);
-		this.salary = salary;
-		this.nameCompany = nameCompany;
-	}
 
 	/**
 	 * 
@@ -39,4 +26,8 @@ public class Employee extends Person{
 		this.nameCompany = nameCompany;
 	}
 	
+	@Override
+	public String toString() {
+		return super.toString() + " , Entreprise : " + this.nameCompany + " , salaires : " + this.salary;
+	}
 }
