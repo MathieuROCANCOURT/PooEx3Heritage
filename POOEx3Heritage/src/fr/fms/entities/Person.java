@@ -6,15 +6,18 @@ package fr.fms.entities;
 public class Person {
 	private String lastName;
 	private String firstName;
-	private int old;
-	private String address;
-	private City bornCity;
+	private int old = 0;
+	private String address = "unknown";
+	private City bornCity = null;
+	private Capital capital = null;
 
 	/**
+	 * 
 	 * @param lastName
 	 * @param firstName
 	 * @param old
-	 * @param adress
+	 * @param address
+	 * @param bornCity
 	 */
 	public Person(String lastName, String firstName, int old, String address, City bornCity) {
 		this.lastName = lastName;
@@ -25,28 +28,19 @@ public class Person {
 	}
 
 	/**
+	 * 
 	 * @param lastName
 	 * @param firstName
 	 * @param old
+	 * @param address
+	 * @param capital
 	 */
-	public Person(String lastName, String firstName, int old) {
+	public Person(String lastName, String firstName, int old, String address, Capital capital) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.old = old;
-		this.address = "unknown";
-		this.bornCity = null;
-	}
-
-	/**
-	 * @param lastName
-	 * @param firstName
-	 */
-	public Person(String lastName, String firstName) {
-		this.lastName = lastName;
-		this.firstName = firstName;
-		this.old = 0;
-		this.address = "unknown";
-		this.bornCity = null;
+		this.address = address;
+		this.capital = capital;
 	}
 
 	/**
@@ -70,6 +64,10 @@ public class Person {
 			if (this.bornCity.getNbInhabitants() != 0) {
 				display += " , " + this.bornCity.getNbInhabitants() + " d'habitants";
 			}
+		}
+		
+		if (this.capital != null) {
+			display += this.capital.toString();
 		}
 
 		return display;
