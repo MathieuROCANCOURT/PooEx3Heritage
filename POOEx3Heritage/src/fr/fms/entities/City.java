@@ -9,7 +9,7 @@ import javax.management.RuntimeErrorException;
  * 
  */
 public class City {
-	private static int nbCity = 0;
+	private int nbCity = 0;
 
 	private String name;
 	private String country;
@@ -96,7 +96,7 @@ public class City {
 	/**
 	 * @return
 	 */
-	public static int getNbCity() {
+	public int getNbCity() {
 		return nbCity;
 	}
 
