@@ -67,7 +67,7 @@ public class Person {
 		}
 		
 		if (this.capital != null) {
-			display += this.capital.toString();
+			display += " , Ville de naissance : " + this.capital.toString();
 		}
 
 		return display;
