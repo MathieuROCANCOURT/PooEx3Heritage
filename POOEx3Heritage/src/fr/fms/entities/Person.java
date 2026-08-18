@@ -56,7 +56,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		String display = this.lastName + " , " + this.firstName + " , " + this.old + " , habitant " + this.address;
+		String display = this.lastName + " , " + this.firstName + " , " + this.old + "ans , habitant " + this.address;
 
 		if (this.bornCity != null) {
 			display += " , Ville de naissance : " + this.bornCity.getName() + " , " + this.bornCity.getCountry();
@@ -65,7 +65,7 @@ public class Person {
 				display += " , " + this.bornCity.getNbInhabitants() + " d'habitants";
 			}
 		}
-		
+
 		if (this.capital != null) {
 			display += " , Ville de naissance : " + this.capital.toString();
 		}
@@ -73,4 +73,3 @@ public class Person {
 		return display;
 	}
 }
-
