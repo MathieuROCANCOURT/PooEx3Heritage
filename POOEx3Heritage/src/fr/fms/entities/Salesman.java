@@ -41,7 +41,7 @@ public class Salesman extends Person {
 	
 	@Override
 	public double monthlySalary() {
-		return this.revenu * 5000;
+		return this.revenu / 100 * 50000;
 	}
 
 	@Override
