@@ -28,6 +28,6 @@ public class Salesman extends Person {
 
 	@Override
 	public String toString() {
-		return super.toString() + " Entreprise : " + this.nameCompany + ", % CA :" + this.revenu;
+		return super.toString() + " Entreprise : " + this.nameCompany + ", % CA : " + this.revenu;
 	}
 }
