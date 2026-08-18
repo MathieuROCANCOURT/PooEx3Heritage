@@ -56,8 +56,14 @@ public abstract class Person {
 	public boolean inParis() {
 		return this.address.contains("Paris");
 	}
-	
+
 	public abstract double monthlySalary();
+
+	public void displayMonthlySalary() {
+		System.out.print("Salaire mensuel de " + this.firstName + " " + this.lastName + " : ");
+		System.out.printf("%.2f", this.monthlySalary());
+		System.out.println();
+	}
 
 	@Override
 	public String toString() {
