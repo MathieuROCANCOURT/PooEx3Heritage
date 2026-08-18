@@ -50,6 +50,9 @@ public class Person {
 		return this.bornCity.getCountry().contains("France");
 	}
 
+	/**
+	 * @return
+	 */
 	public boolean inParis() {
 		return this.address.contains("Paris");
 	}
