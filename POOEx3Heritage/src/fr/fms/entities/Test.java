@@ -39,6 +39,11 @@ public class Test {
 			System.out.println(person);
 		}
 		System.out.println("----------------------------------------------");
+		
+		/** Display monthly salary of the Employee and Salesman in the list **/
+		for (Person person: listPerson) {
+			person.displayMonthlySalary();
+		}
 	}
 
 }
