@@ -23,7 +23,21 @@ public class Salesman extends Person {
 			double revenu) {
 		super(lastName, firstName, old, address, bornCity);
 		this.nameCompany = nameCompany;
-		this.revenu = revenu;
+		setRevenu(revenu);
+	}
+
+	/**
+	 * @param revenu the revenu to set
+	 */
+	public void setRevenu(double revenu) {
+		if (revenu < 0) {
+			System.err.println("% du chiffre d'affaire inférieur à 0 impossible.");
+			if (this.revenu < 0) {
+				this.revenu = 0;
+			}
+		} else
+			this.revenu = revenu;
+
 	}
 
 	@Override
