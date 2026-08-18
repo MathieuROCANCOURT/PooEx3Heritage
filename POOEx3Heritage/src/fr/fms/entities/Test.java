@@ -24,6 +24,12 @@ public class Test {
 		Salesman dupont = new Salesman("Dupont", "Robert", 50, "Rue des rosiers à Toulouse", new City("Limoges", "France"), "brico", 5.0);
 		
 		System.out.println(dupont);
+		
+		/** Test error values **/
+		dupont.setRevenu(-5);
+		dupont.setRevenu(3.5);
+		
+		System.out.println(dupont);
 	}
 
 }
