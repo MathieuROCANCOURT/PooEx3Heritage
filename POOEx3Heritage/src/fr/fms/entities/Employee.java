@@ -45,6 +45,12 @@ public class Employee extends Person {
 	}
 
 	@Override
+	public double monthlySalary() {
+		// TODO Auto-generated method stub
+		return this.salary * 0.8;
+	}
+
+	@Override
 	public String toString() {
 		return super.toString() + " , Entreprise : " + this.nameCompany + " , salaires : " + this.salary;
 	}

@@ -30,6 +30,15 @@ public class Test {
 		dupont.setRevenu(3.5);
 		
 		System.out.println(dupont);
+		
+		/** Create Employee and Salesman list **/
+		Person[] listPerson = new Person[] {gate, musk, dupont};
+
+		System.out.println("----------------------------------------------");
+		for (Person person: listPerson) {
+			System.out.println(person);
+		}
+		System.out.println("----------------------------------------------");
 	}
 
 }

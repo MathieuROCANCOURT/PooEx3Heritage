@@ -37,7 +37,11 @@ public class Salesman extends Person {
 			}
 		} else
 			this.revenu = revenu;
-
+	}
+	
+	@Override
+	public double monthlySalary() {
+		return this.revenu * 5000;
 	}
 
 	@Override

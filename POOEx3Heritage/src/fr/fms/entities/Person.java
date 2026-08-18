@@ -3,7 +3,7 @@ package fr.fms.entities;
 /**
  * 
  */
-public class Person {
+public abstract class Person {
 	private String lastName;
 	private String firstName;
 	private int old = 0;
@@ -56,6 +56,8 @@ public class Person {
 	public boolean inParis() {
 		return this.address.contains("Paris");
 	}
+	
+	public abstract double monthlySalary();
 
 	@Override
 	public String toString() {
