@@ -95,7 +95,9 @@ public class City {
 	}
 
 	/**
-	 * @param country the country to set
+	 * Set the country name.
+	 * 
+	 * @param country Country to set.
 	 */
 	public void setCountry(String country) {
 		this.country = country;
