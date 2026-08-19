@@ -14,13 +14,13 @@ public class Employee extends Person {
 
 	/**
 	 * 
-	 * @param lastName
-	 * @param firstName
-	 * @param old
-	 * @param address
-	 * @param bornCity
-	 * @param salary
-	 * @param nameCompany
+	 * @param lastName    Last name.
+	 * @param firstName   First name.
+	 * @param old         Age.
+	 * @param address     Address of the person.
+	 * @param bornCity    City of birth.
+	 * @param salary      Monthly Salary.
+	 * @param nameCompany Company name.
 	 */
 	public Employee(String lastName, String firstName, int old, String address, City bornCity, double salary,
 			String nameCompany) {
@@ -31,13 +31,13 @@ public class Employee extends Person {
 
 	/**
 	 * 
-	 * @param lastName
-	 * @param firstName
-	 * @param old
-	 * @param address
-	 * @param bornCity
-	 * @param salary
-	 * @param nameCompany
+	 * @param lastName    Last name.
+	 * @param firstName   First name.
+	 * @param old         Age.
+	 * @param address     Address of the person.
+	 * @param capital     Capital of birth.
+	 * @param salary      Monthly Salary.
+	 * @param nameCompany Company name.
 	 */
 	public Employee(String lastName, String firstName, int old, String address, Capital capital, double salary,
 			String nameCompany) {
@@ -48,7 +48,6 @@ public class Employee extends Person {
 
 	@Override
 	public double monthlySalary() {
-		// TODO Auto-generated method stub
 		return this.salary * 0.8;
 	}
 
