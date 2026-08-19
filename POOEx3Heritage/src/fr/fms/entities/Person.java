@@ -1,7 +1,10 @@
 package fr.fms.entities;
 
 /**
+ * A person has a first name and a last name. Age, address and city of born or
+ * capital are optional.
  * 
+ * @author RocancourtM
  */
 public abstract class Person {
 	private String lastName;
