@@ -13,6 +13,7 @@ public class Employee extends Person {
 	private double salary;
 
 	/**
+	 * An employee whose city of birth is a City.
 	 * 
 	 * @param lastName    Last name.
 	 * @param firstName   First name.
@@ -30,6 +31,7 @@ public class Employee extends Person {
 	}
 
 	/**
+	 * An employee whose city of birth is a Capital city.
 	 * 
 	 * @param lastName    Last name.
 	 * @param firstName   First name.
