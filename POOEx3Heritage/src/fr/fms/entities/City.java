@@ -12,7 +12,7 @@ import javax.management.RuntimeErrorException;
  */
 public class City {
 	/** Count the number of instances of City. */
-	private int nbCity = 0;
+	private static int nbCity = 0;
 
 	private String name;
 	private String country;
@@ -29,7 +29,7 @@ public class City {
 		this.name = name;
 		this.country = country;
 		setNbInhabitants(nbInhabitants);
-		nbCity += 1;
+		nbCity++;
 	}
 	
 	/**
@@ -42,7 +42,7 @@ public class City {
 		this.name = name;
 		this.country = country;
 		setNbInhabitants(0);
-		nbCity += 1;
+		nbCity++;
 	}
 
 	/**
@@ -55,7 +55,7 @@ public class City {
 		this.name = name;
 		setCountry("unknown");
 		this.nbInhabitants = nbInhabitants;
-		nbCity += 1;
+		nbCity++;
 	}
 
 	/**
@@ -118,7 +118,7 @@ public class City {
 	 * 
 	 * @return number of instances of City.
 	 */
-	public int getNbCity() {
+	public static int getNbCity() {
 		return nbCity;
 	}
 
