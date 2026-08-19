@@ -4,13 +4,13 @@
 package fr.fms.entities;
 
 /**
- * An Employee class extends the Person class with revenu and a company name.
+ * An Employee class extends the Person class with revenue and a company name.
  * 
  * @author RocancourtM
  */
 public class Salesman extends Person {
 	private String nameCompany;
-	private double revenu;
+	private double revenue;
 
 	/**
 	 * An Salesman constructor.
@@ -21,35 +21,35 @@ public class Salesman extends Person {
 	 * @param address     Address of the person.
 	 * @param bornCity    City of birth.
 	 * @param nameCompany Company name.
-	 * @param revenu      Company revenu.
+	 * @param revenue     Company revenue.
 	 */
 	public Salesman(String lastName, String firstName, int old, String address, City bornCity, String nameCompany,
-			double revenu) {
+			double revenue) {
 		super(lastName, firstName, old, address, bornCity);
 		this.nameCompany = nameCompany;
-		setRevenu(revenu);
+		setRevenu(revenue);
 	}
 
 	/**
-	 * @param revenu the revenu to set
+	 * @param revenue the revenue to set
 	 */
 	public void setRevenu(double revenu) {
 		if (revenu < 0) {
 			System.err.println("% du chiffre d'affaire inférieur à 0 impossible.");
-			if (this.revenu < 0) {
-				this.revenu = 0;
+			if (this.revenue < 0) {
+				this.revenue = 0;
 			}
 		} else
-			this.revenu = revenu;
+			this.revenue = revenu;
 	}
 
 	@Override
 	public double monthlySalary() {
-		return this.revenu / 100 * 50000;
+		return this.revenue / 100 * 50000;
 	}
 
 	@Override
 	public String toString() {
-		return super.toString() + " Entreprise : " + this.nameCompany + ", % CA : " + this.revenu;
+		return super.toString() + " Entreprise : " + this.nameCompany + ", % CA : " + this.revenue;
 	}
 }
