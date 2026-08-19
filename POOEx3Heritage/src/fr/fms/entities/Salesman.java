@@ -4,7 +4,9 @@
 package fr.fms.entities;
 
 /**
+ * An Employee class extends the Person class with revenu and a company name.
  * 
+ * @author RocancourtM
  */
 public class Salesman extends Person {
 	private String nameCompany;
