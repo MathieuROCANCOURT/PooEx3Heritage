@@ -9,6 +9,9 @@ package fr.fms.entities;
  * @author RocancourtM
  */
 public class TestCapital {
+	/**
+	 * TestCapital constructor
+	 */
 	public TestCapital() {
 		super();
 	}
