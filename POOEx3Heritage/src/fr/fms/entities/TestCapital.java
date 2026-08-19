@@ -9,6 +9,10 @@ package fr.fms.entities;
  * @author RocancourtM
  */
 public class TestCapital {
+	public TestCapital() {
+		super();
+	}
+	
 	/**
 	 * @param args
 	 */
