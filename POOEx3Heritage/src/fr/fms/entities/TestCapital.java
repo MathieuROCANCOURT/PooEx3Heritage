@@ -17,7 +17,9 @@ public class TestCapital {
 	}
 	
 	/**
-	 * @param args
+	 * Main program
+	 * 
+	 * @param args Arguments in the command line.
 	 */
 	public static void main(String[] args) {
 		Capital paris = new Capital("Paris", "France", 2_000_000, "Tour Eiffel");
