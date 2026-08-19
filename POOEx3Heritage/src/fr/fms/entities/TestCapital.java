@@ -4,7 +4,9 @@
 package fr.fms.entities;
 
 /**
+ * Check the Capital display.
  * 
+ * @author RocancourtM
  */
 public class TestCapital {
 	/**
