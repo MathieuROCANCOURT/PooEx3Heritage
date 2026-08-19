@@ -4,7 +4,9 @@
 package fr.fms.entities;
 
 /**
+ * Test all classes with their method.
  * 
+ * @author RocancourtM
  */
 public class Test {
 	/**
