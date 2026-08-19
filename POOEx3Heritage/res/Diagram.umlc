@@ -16,7 +16,7 @@
     <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
       accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
   <class id="3" language="java" name="fr.fms.entities.Test" project="POOEx3Heritage" 
@@ -97,8 +97,8 @@
   </association>  
   <classifier-attribute resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" 
     sort="true" accessors="true" visibility="true">    
-    <attributes public="true" package="true" protected="true" private="false" static="false"/>    
-    <operations public="true" package="true" protected="false" private="true" static="false"/>  
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
   </classifier-attribute>  
   <association-attribute labels="true" multiplicity="true"/>
 </umlmark-class>
