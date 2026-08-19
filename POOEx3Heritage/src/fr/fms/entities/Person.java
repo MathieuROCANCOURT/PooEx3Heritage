@@ -15,12 +15,13 @@ public abstract class Person {
 	private Capital capital = null;
 
 	/**
+	 * Create a person with last name, first name, age, address and city of birth.
 	 * 
-	 * @param lastName
-	 * @param firstName
-	 * @param old
-	 * @param address
-	 * @param bornCity
+	 * @param lastName  Last name.
+	 * @param firstName First name.
+	 * @param old       Age.
+	 * @param address   Address of the person.
+	 * @param bornCity  City of birth.
 	 */
 	protected Person(String lastName, String firstName, int old, String address, City bornCity) {
 		this.lastName = lastName;
@@ -31,12 +32,13 @@ public abstract class Person {
 	}
 
 	/**
+	 * Create a person with last name, first name, age, address and capital.
 	 * 
-	 * @param lastName
-	 * @param firstName
-	 * @param old
-	 * @param address
-	 * @param capital
+	 * @param lastName  Last name.
+	 * @param firstName First name.
+	 * @param old       Age.
+	 * @param address   Address of the person.
+	 * @param capital	Capital of birth.
 	 */
 	protected Person(String lastName, String firstName, int old, String address, Capital capital) {
 		this.lastName = lastName;
