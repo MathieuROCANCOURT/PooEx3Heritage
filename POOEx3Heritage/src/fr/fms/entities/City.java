@@ -6,9 +6,12 @@ package fr.fms.entities;
 import javax.management.RuntimeErrorException;
 
 /**
+ * Class city to create with the country and the number of inhabitants.
  * 
+ * @author RocancourtM
  */
 public class City {
+	/** Count the number of instances of City. */
 	private int nbCity = 0;
 
 	private String name;
@@ -16,9 +19,11 @@ public class City {
 	private int nbInhabitants;
 
 	/**
-	 * @param name
-	 * @param country
-	 * @param nbInhabitants
+	 * Constructor with name of city, the country and the number of inhabitants.
+	 * 
+	 * @param name          City name.
+	 * @param country       Country where is the city.
+	 * @param nbInhabitants Number of inhabitants of the city.
 	 */
 	public City(String name, String country, int nbInhabitants) {
 		this.name = name;
@@ -28,8 +33,10 @@ public class City {
 	}
 	
 	/**
-	 * @param name
-	 * @param country
+	 * Constructor with name of city and the country .
+	 * 
+	 * @param name    City name.
+	 * @param country Country where is the city.
 	 */
 	public City(String name, String country) {
 		this.name = name;
@@ -39,8 +46,10 @@ public class City {
 	}
 
 	/**
-	 * @param name
-	 * @param nbInhabitants
+	 * Constructor with name of city and the number of inhabitants.
+	 * 
+	 * @param name          City name.
+	 * @param nbInhabitants Number of inhabitants of the city.
 	 */
 	public City(String name, int nbInhabitants) {
 		this.name = name;
@@ -50,28 +59,36 @@ public class City {
 	}
 
 	/**
-	 * @return the name
+	 * Get the city name.
+	 * 
+	 * @return City name.
 	 */
 	public String getName() {
 		return name;
 	}
 
 	/**
-	 * @return the country
+	 * Get back the country from the city.
+	 * 
+	 * @return the country.
 	 */
 	public String getCountry() {
 		return country;
 	}
 
 	/**
-	 * @return the nbInhabitants
+	 * Get the number of inhabitants.
+	 * 
+	 * @return Number of inhabitants.
 	 */
 	public int getNbInhabitants() {
 		return nbInhabitants;
 	}
 
 	/**
-	 * @param name the name to set
+	 * Set the name city.
+	 * 
+	 * @param name City name to set.
 	 */
 	public void setName(String name) {
 		this.name = name;
@@ -85,7 +102,10 @@ public class City {
 	}
 
 	/**
-	 * @param nbInhabitants the nbInhabitants to set
+	 * Set the number of inhabitants.
+	 * 
+	 * @param nbInhabitants The nbInhabitants to set.
+	 * @throws RuntimeErrorException if the number of inhabitants is less than 0.
 	 */
 	public void setNbInhabitants(int nbInhabitants) {
 		if (nbInhabitants < 0)
@@ -94,14 +114,18 @@ public class City {
 	}
 
 	/**
-	 * @return
+	 * Get the number of instances of City.
+	 * 
+	 * @return number of instances of City.
 	 */
 	public int getNbCity() {
 		return nbCity;
 	}
 
 	/**
-	 * @param gap
+	 * Changes in the city’s population.
+	 * 
+	 * @param gap The value used to increase or decrease the number of inhabitants.
 	 */
 	public void changeProgressHabitants(int gap) {
 		this.setNbInhabitants(this.nbInhabitants + gap);
