@@ -4,7 +4,9 @@
 package fr.fms.entities;
 
 /**
+ * Class capital that is a City plus a monument.
  * 
+ * @author RocancourtM
  */
 public class Capital extends City {
 	private String monument;
