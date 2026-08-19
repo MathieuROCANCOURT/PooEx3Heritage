@@ -12,10 +12,12 @@ public class Capital extends City {
 	private String monument;
 
 	/**
-	 * @param name
-	 * @param country
-	 * @param nbInhabitants
-	 * @param monument
+	 * Constructor Capital with a monument in the City.
+	 * 
+	 * @param name          Capital name.
+	 * @param country       Country where is the capital.
+	 * @param nbInhabitants Number of inhabitants of the capital.
+	 * @param monument      Monument in the capital.
 	 */
 	public Capital(String name, String country, int nbInhabitants, String monument) {
 		super(name, country, nbInhabitants);
