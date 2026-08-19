@@ -11,13 +11,15 @@ public class Salesman extends Person {
 	private double revenu;
 
 	/**
-	 * @param lastName
-	 * @param firstName
-	 * @param old
-	 * @param address
-	 * @param bornCity
-	 * @param nameCompany
-	 * @param revenu
+	 * An Salesman constructor.
+	 * 
+	 * @param lastName    Last name.
+	 * @param firstName   First name.
+	 * @param old         Age.
+	 * @param address     Address of the person.
+	 * @param bornCity    City of birth.
+	 * @param nameCompany Company name.
+	 * @param revenu      Company revenu.
 	 */
 	public Salesman(String lastName, String firstName, int old, String address, City bornCity, String nameCompany,
 			double revenu) {
@@ -38,7 +40,7 @@ public class Salesman extends Person {
 		} else
 			this.revenu = revenu;
 	}
-	
+
 	@Override
 	public double monthlySalary() {
 		return this.revenu / 100 * 50000;
