@@ -35,14 +35,14 @@ public class Salesman extends Person {
 	 * 
 	 * @param revenue Company revenue to set
 	 */
-	public void setRevenu(double revenu) {
-		if (revenu < 0) {
+	public void setRevenu(double revenue) {
+		if (revenue < 0) {
 			System.err.println("% du chiffre d'affaire inférieur à 0 impossible.");
 			if (this.revenue < 0) {
 				this.revenue = 0;
 			}
 		} else
-			this.revenue = revenu;
+			this.revenue = revenue;
 	}
 
 	@Override
