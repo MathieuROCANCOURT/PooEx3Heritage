@@ -19,7 +19,7 @@ public abstract class Person {
 	 * @param address
 	 * @param bornCity
 	 */
-	public Person(String lastName, String firstName, int old, String address, City bornCity) {
+	protected Person(String lastName, String firstName, int old, String address, City bornCity) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.old = old;
@@ -35,7 +35,7 @@ public abstract class Person {
 	 * @param address
 	 * @param capital
 	 */
-	public Person(String lastName, String firstName, int old, String address, Capital capital) {
+	protected Person(String lastName, String firstName, int old, String address, Capital capital) {
 		this.lastName = lastName;
 		this.firstName = firstName;
 		this.old = old;
