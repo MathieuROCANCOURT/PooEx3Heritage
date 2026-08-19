@@ -31,7 +31,9 @@ public class Salesman extends Person {
 	}
 
 	/**
-	 * @param revenue the revenue to set
+	 * Modify the company's revenue by checking whether the value is greater or equal to 0.
+	 * 
+	 * @param revenue Company revenue to set
 	 */
 	public void setRevenu(double revenu) {
 		if (revenu < 0) {
